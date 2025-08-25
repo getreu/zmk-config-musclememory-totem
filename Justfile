@@ -75,9 +75,9 @@ uninit:
 draw:
     #!/usr/bin/env bash
     set -euo pipefail
-    keymap -c "{{ draw }}/config.yaml" parse -z "{{ config }}/base.keymap" --virtual-layers Combos >"{{ draw }}/base.yaml"
-    yq -Yi '.combos.[].l = ["Combos"]' "{{ draw }}/base.yaml"
-    keymap -c "{{ draw }}/config.yaml" draw "{{ draw }}/base.yaml" -k "ferris/sweep" >"{{ draw }}/base.svg"
+    keymap -c "{{ draw }}/config.yaml" parse -z "{{ config }}/totem.keymap" --virtual-layers Combos >"{{ draw }}/totem.yaml"
+    yq -Yi '.combos.[].l = ["Combos"]' "{{ draw }}/totem.yaml"
+    keymap -c "{{ draw }}/config.yaml" draw "{{ draw }}/totem.yaml" -k "totem" >"{{ draw }}/totem.svg"
 
 # initialize west
 init:
