@@ -23,7 +23,7 @@
     q w e r t   y u i o p
     a s d f g   h j k l ;
     z x c v b   n m , . / 
-    esc tab caps del lsft lmet lalt spc ralt rmet rsft
+    esc tab caps del lsft lmet lalt spc ralt rmet rsft prtsc
 )
 
 (defvar
@@ -135,47 +135,47 @@
   q w e r t   y u i o p
   a s d f g   h j k l ;
   z x c v b   n m , . /
-  esc tab caps del lsft lmet lalt spc ralt rmet rsft
+  esc tab caps del lsft lmet lalt spc ralt rmet rsft comp
 )
 
 (deflayer base
    q  w  e  r  t    y  u  i  o  p 
    @a @s @d @f @g   @h @j @k @l @; 
    z  x  c  @v b    n  @m ,  .  /
-   @esc @tab @caps del lsft @lmet @lalt @spc @ralt @rmet rsft
+   @esc @tab @caps del lsft @lmet @lalt @spc @ralt @rmet rsft comp
 )
 
 (deflayer symb
    1    2  3   4   5     6   7   8   9   0
    @a2 @s2 @d2 @f2 @g2   @h2 @j2 @k2 @l2 @;2
    `   -   =   @v2 ]     \   @m2 _   _   _
-   _ _ _ _ _ _ _ _ _ _ _
+   _ _ _ _ _ _ _ _ _ _ _ _
 )
 
 (deflayer fn
    f1   f2 f3  f4  f5    f6  f7  f8  f9  f10
    f11 f12 f13 f14 f15   f16 f17 f18 f19 f20
    f21 f22 f23 f24 XX    XX  XX  XX  XX  XX
-   _ _ _ _ _ _ _ _ _ _ _
+   _ _ _ _ _ _ _ _ _ _ _ _
 )
 
 (deflayer navigation
    XX  XX  XX  XX  XX       home del  ins  end bspc
    @a2 @s2 @d2 @f2 @g2      @h2  @j2  @k2  @l2 @;2
    XX  XX  XX  @v4 XX       XX  @m4  pgup XX  XX
-   _ _ _ _ _ _ _ _ _ _ _
+   _ _ _ _ _ _ _ _ _ _ _ _
 )
 
 (deflayer mouse
   mbck mlft mmid mrgt mfwd  @ms← @ms↓ @ms↑ @ms→ mltp
   mbtp mltp mmtp mrtp mftp  @ma← @ma↓ @ma↑ @ma→ mltp   
   bck  fwd  @fst @sm  XX    @mwl @mwd @mwu @mwr mltp
-  _ _ _ _ _ _ _ _ _ _ _
+  _ _ _ _ _ _ _ _ _ _ _ _
 
 )
 (deflayer system
   XX XX XX XX XX                 XX   brdn   bru  XX XX    
   XX XX XX XX XX                 mute voldwn volu XX XX    
   XX XX XX XX XX                 pp   prev   next XX XX    
-  XX XX XX XX XX XX XX XX XX XX XX
+  XX XX XX XX XX XX XX XX XX XX XX XX
 )
