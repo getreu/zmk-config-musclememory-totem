@@ -1,0 +1,1384 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="848.71869"
+   height="340.48962"
+   viewBox="0 0 848.71869 340.48962"
+   class="keymap"
+   version="1.1"
+   id="svg1177"
+   sodipodi:docname="base.svg"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1177" />
+  <sodipodi:namedview
+     id="namedview1177"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="5.380675"
+     inkscape:cx="736.89639"
+     inkscape:cy="222.4628"
+     inkscape:window-width="1916"
+     inkscape:window-height="1041"
+     inkscape:window-x="0"
+     inkscape:window-y="18"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g80" />
+  <style
+     id="style1">/* inherit to force styles through use tags */
+svg path {
+    fill: inherit;
+}
+
+/* font and background color specifications */
+svg.keymap {
+    font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+    font-size: 14px;
+    font-kerning: normal;
+    text-rendering: optimizeLegibility;
+    fill: #24292e;
+}
+
+/* default key styling */
+rect.key {
+    fill: #f6f8fa;
+}
+
+rect.key, rect.combo {
+    stroke: #c9cccf;
+    stroke-width: 1;
+}
+
+/* default key side styling, only used is draw_key_sides is set */
+rect.side {
+    filter: brightness(90%);
+}
+
+/* color accent for combo boxes */
+rect.combo, rect.combo-separate {
+    fill: #cdf;
+}
+
+/* color accent for held keys */
+rect.held, rect.combo.held {
+    fill: #fdd;
+}
+
+/* color accent for ghost (optional) keys */
+rect.ghost, rect.combo.ghost {
+    stroke-dasharray: 4, 4;
+    stroke-width: 2;
+}
+
+text {
+    text-anchor: middle;
+    dominant-baseline: middle;
+}
+
+/* styling for layer labels */
+text.label {
+    font-weight: bold;
+    text-anchor: start;
+    stroke: white;
+    stroke-width: 4;
+    paint-order: stroke;
+}
+
+/* styling for optional footer */
+text.footer {
+    text-anchor: end;
+    dominant-baseline: auto;
+    stroke: white;
+    stroke-width: 4;
+    paint-order: stroke;
+}
+
+/* styling for combo tap, and key non-tap label text */
+text.combo, text.hold, text.shifted, text.left, text.right {
+    font-size: 11px;
+}
+
+text.hold {
+    text-anchor: middle;
+    dominant-baseline: auto;
+}
+
+text.shifted {
+    text-anchor: middle;
+    dominant-baseline: hanging;
+}
+
+text.left {
+    text-anchor: start;
+}
+
+text.right {
+    text-anchor: end;
+}
+
+text.layer-activator {
+    text-decoration: underline;
+}
+
+/* styling for hold/shifted label text in combo box */
+text.combo.hold, text.combo.shifted, text.combo.left, text.combo.right {
+    font-size: 8px;
+}
+
+/* lighter symbol for transparent keys */
+text.trans {
+    fill: #7b7e81;
+}
+
+/* styling for combo dendrons */
+path.combo {
+    stroke-width: 1;
+    stroke: gray;
+    fill: none;
+}
+
+/* Start Tabler Icons Cleanup */
+/* cannot use height/width with glyphs */
+.icon-tabler &gt; path {
+    fill: inherit;
+    stroke: inherit;
+    stroke-width: 2;
+}
+/* hide tabler's default box */
+.icon-tabler &gt; path[stroke=&quot;none&quot;][fill=&quot;none&quot;] {
+    visibility: hidden;
+}
+/* End Tabler Icons Cleanup */
+
+@media (prefers-color-scheme: dark) {
+svg.keymap { fill: #d1d6db; }
+rect.key { fill: #3f4750; }
+rect.key, rect.combo { stroke: #60666c; }
+rect.combo, rect.combo-separate { fill: #1f3d7a; }
+rect.held, rect.combo.held { fill: #854747; }
+text.label, text.footer { stroke: black; }
+text.trans { fill: #7e8184; }
+path.combo { stroke: #7f7f7f; }
+
+}</style>
+  <g
+     transform="translate(1.0634766,-20.333008)"
+     class="layer-BASE"
+     id="g80">
+    <text
+       x="0"
+       y="28"
+       class="label"
+       id="BASE">BASE:</text>
+    <g
+       transform="translate(0,56)"
+       id="g79">
+      <g
+         transform="rotate(-10,684.79796,-389.27204)"
+         class="key keypos-0"
+         id="g2">
+        <rect
+           rx="6"
+           ry="6"
+           x="-28"
+           y="-26"
+           width="55"
+           height="52"
+           class="key side"
+           id="rect1" />
+        <rect
+           rx="4"
+           ry="4"
+           x="-22"
+           y="-24"
+           width="43"
+           height="40"
+           class="key"
+           id="rect2" />
+        <text
+           x="0"
+           y="-4"
+           class="key tap"
+           id="text2">Q</text>
+      </g>
+      <g
+         transform="rotate(-4,959.72385,-2030.8102)"
+         class="key keypos-1"
+         id="g4">
+        <rect
+           rx="6"
+           ry="6"
+           x="-28"
+           y="-26"
+           width="55"
+           height="52"
+           class="key side"
+           id="rect3" />
+        <rect
+           rx="4"
+           ry="4"
+           x="-22"
+           y="-24"
+           width="43"
+           height="40"
+           class="key"
+           id="rect4" />
+        <text
+           x="0"
+           y="-4"
+           class="key tap"
+           id="text4">W</text>
+      </g>
+      <g
+         transform="translate(212,28)"
+         class="key keypos-2"
+         id="g6">
+        <rect
+           rx="6"
+           ry="6"
+           x="-28"
+           y="-26"
+           width="55"
+           height="52"
+           class="key side"
+           id="rect5" />
+        <rect
+           rx="4"
+           ry="4"
+           x="-22"
+           y="-24"
+           width="43"
+           height="40"
+           class="key"
+           id="rect6" />
+        <text
+           x="0"
+           y="-4"
+           class="key tap"
+           id="text6">E</text>
+      </g>
+      <g
+         transform="translate(271,56)"
+         class="key keypos-3"
+         id="g8">
+        <rect
+           rx="6"
+           ry="6"
+           x="-28"
+           y="-26"
+           width="55"
+           height="52"
+           class="key side"
+           id="rect7" />
+        <rect
+           rx="4"
+           ry="4"
+           x="-22"
+           y="-24"
+           width="43"
+           height="40"
+           class="key"
+           id="rect8" />
+        <text
+           x="0"
+           y="-4"
+           class="key tap"
+           id="text8">R</text>
+      </g>
+      <g
+         transform="translate(330,65)"
+         class="key keypos-4"
+         id="g10">
+        <rect
+           rx="6"
+           ry="6"
+           x="-28"
+           y="-26"
+           width="55"
+           height="52"
+           class="key side"
+           id="rect9" />
+        <rect
+           rx="4"
+           ry="4"
+           x="-22"
+           y="-24"
+           width="43"
+           height="40"
+           class="key"
+           id="rect10" />
+        <text
+           x="0"
+           y="-4"
+           class="key tap"
+           id="text10">T</text>
+      </g>
+      <g
+         transform="translate(520,65)"
+         class="key keypos-5"
+         id="g12">
+        <rect
+           rx="6"
+           ry="6"
+           x="-28"
+           y="-26"
+           width="55"
+           height="52"
+           class="key side"
+           id="rect11" />
+        <rect
+           rx="4"
+           ry="4"
+           x="-22"
+           y="-24"
+           width="43"
+           height="40"
+           class="key"
+           id="rect12" />
+        <text
+           x="0"
+           y="-4"
+           class="key tap"
+           id="text12">Y</text>
+      </g>
+      <g
+         transform="translate(580,56)"
+         class="key keypos-6"
+         id="g14">
+        <rect
+           rx="6"
+           ry="6"
+           x="-28"
+           y="-26"
+           width="55"
+           height="52"
+           class="key side"
+           id="rect13" />
+        <rect
+           rx="4"
+           ry="4"
+           x="-22"
+           y="-24"
+           width="43"
+           height="40"
+           class="key"
+           id="rect14" />
+        <text
+           x="0"
+           y="-4"
+           class="key tap"
+           id="text14">U</text>
+      </g>
+      <g
+         transform="translate(639,28)"
+         class="key keypos-7"
+         id="g16">
+        <rect
+           rx="6"
+           ry="6"
+           x="-28"
+           y="-26"
+           width="55"
+           height="52"
+           class="key side"
+           id="rect15" />
+        <rect
+           rx="4"
+           ry="4"
+           x="-22"
+           y="-24"
+           width="43"
+           height="40"
+           class="key"
+           id="rect16" />
+        <text
+           x="0"
+           y="-4"
+           class="key tap"
+           id="text16">I</text>
+      </g>
+      <g
+         transform="rotate(4,-534.72385,10139.597)"
+         class="key keypos-8"
+         id="g18">
+        <rect
+           rx="6"
+           ry="6"
+           x="-28"
+           y="-26"
+           width="55"
+           height="52"
+           class="key side"
+           id="rect17" />
+        <rect
+           rx="4"
+           ry="4"
+           x="-22"
+           y="-24"
+           width="43"
+           height="40"
+           class="key"
+           id="rect18" />
+        <text
+           x="0"
+           y="-4"
+           class="key tap"
+           id="text18">O</text>
+      </g>
+      <g
+         transform="rotate(10,-259.29796,4474.2152)"
+         class="key keypos-9"
+         id="g20">
+        <rect
+           rx="6"
+           ry="6"
+           x="-28"
+           y="-26"
+           width="55"
+           height="52"
+           class="key side"
+           id="rect19" />
+        <rect
+           rx="4"
+           ry="4"
+           x="-22"
+           y="-24"
+           width="43"
+           height="40"
+           class="key"
+           id="rect20" />
+        <text
+           x="0"
+           y="-4"
+           class="key tap"
+           id="text20">P</text>
+      </g>
+      <g
+         transform="rotate(-10,1003.6244,-413.20728)"
+         class="key keypos-10"
+         id="g23">
+        <rect
+           rx="6"
+           ry="6"
+           x="-28"
+           y="-26"
+           width="55"
+           height="52"
+           class="key side"
+           id="rect21" />
+        <rect
+           rx="4"
+           ry="4"
+           x="-22"
+           y="-24"
+           width="43"
+           height="40"
+           class="key"
+           id="rect22" />
+        <text
+           x="0"
+           y="-4"
+           class="key tap"
+           id="text22">A</text>
+        <text
+           x="0"
+           y="24"
+           class="key hold"
+           id="text23">LSHIFT</text>
+      </g>
+      <g
+         transform="rotate(-4,1763.5389,-2060.0827)"
+         class="key keypos-11"
+         id="g25">
+        <rect
+           rx="6"
+           ry="6"
+           x="-28"
+           y="-26"
+           width="55"
+           height="52"
+           class="key side"
+           id="rect23" />
+        <rect
+           rx="4"
+           ry="4"
+           x="-22"
+           y="-24"
+           width="43"
+           height="40"
+           class="key"
+           id="rect24" />
+        <text
+           x="0"
+           y="-4"
+           class="key tap"
+           id="text24">S</text>
+        <text
+           x="0"
+           y="24"
+           class="key hold"
+           id="text25"><tspan
+             style="font-size:78%"
+             id="tspan24">RIGHT ALT</tspan></text>
+      </g>
+      <g
+         transform="translate(212,84)"
+         class="key keypos-12"
+         id="g27">
+        <rect
+           rx="6"
+           ry="6"
+           x="-28"
+           y="-26"
+           width="55"
+           height="52"
+           class="key side"
+           id="rect25" />
+        <rect
+           rx="4"
+           ry="4"
+           x="-22"
+           y="-24"
+           width="43"
+           height="40"
+           class="key"
+           id="rect26" />
+        <text
+           x="0"
+           y="-4"
+           class="key tap"
+           id="text26">D</text>
+        <a
+           href="#SYMB"
+           id="a27">
+          <text
+             x="0"
+             y="24"
+             class="key hold layer-activator"
+             id="text27"
+             style="text-decoration:underline;text-decoration-line:underline">SYMB</text>
+        </a>
+      </g>
+      <g
+         transform="translate(271,112)"
+         class="key keypos-13"
+         id="g29">
+        <rect
+           rx="6"
+           ry="6"
+           x="-28"
+           y="-26"
+           width="55"
+           height="52"
+           class="key side"
+           id="rect27" />
+        <rect
+           rx="4"
+           ry="4"
+           x="-22"
+           y="-24"
+           width="43"
+           height="40"
+           class="key"
+           id="rect28" />
+        <text
+           x="0"
+           y="-4"
+           class="key tap"
+           id="text28">F</text>
+        <text
+           x="0"
+           y="24"
+           class="key hold"
+           id="text29">LCTRL</text>
+      </g>
+      <g
+         transform="translate(330,121)"
+         class="key keypos-14"
+         id="g31">
+        <rect
+           rx="6"
+           ry="6"
+           x="-28"
+           y="-26"
+           width="55"
+           height="52"
+           class="key side"
+           id="rect29" />
+        <rect
+           rx="4"
+           ry="4"
+           x="-22"
+           y="-24"
+           width="43"
+           height="40"
+           class="key"
+           id="rect30" />
+        <text
+           x="0"
+           y="-4"
+           class="key tap"
+           id="text30">G</text>
+        <text
+           x="0"
+           y="24"
+           class="key hold"
+           id="text31"><tspan
+             style="font-size:88%"
+             id="tspan30">LEFT ALT</tspan></text>
+      </g>
+      <g
+         transform="translate(520,121)"
+         class="key keypos-15"
+         id="g33">
+        <rect
+           rx="6"
+           ry="6"
+           x="-28"
+           y="-26"
+           width="55"
+           height="52"
+           class="key side"
+           id="rect31" />
+        <rect
+           rx="4"
+           ry="4"
+           x="-22"
+           y="-24"
+           width="43"
+           height="40"
+           class="key"
+           id="rect32" />
+        <text
+           x="0"
+           y="-4"
+           class="key tap"
+           id="text32">H</text>
+        <text
+           x="0"
+           y="24"
+           class="key hold"
+           id="text33"><tspan
+             style="font-size:88%"
+             id="tspan32">LEFT ALT</tspan></text>
+      </g>
+      <g
+         transform="translate(580,112)"
+         class="key keypos-16"
+         id="g35">
+        <rect
+           rx="6"
+           ry="6"
+           x="-28"
+           y="-26"
+           width="55"
+           height="52"
+           class="key side"
+           id="rect33" />
+        <rect
+           rx="4"
+           ry="4"
+           x="-22"
+           y="-24"
+           width="43"
+           height="40"
+           class="key"
+           id="rect34" />
+        <text
+           x="0"
+           y="-4"
+           class="key tap"
+           id="text34">J</text>
+        <text
+           x="0"
+           y="24"
+           class="key hold"
+           id="text35">RCTRL</text>
+      </g>
+      <g
+         transform="translate(639,84)"
+         class="key keypos-17"
+         id="g37">
+        <rect
+           rx="6"
+           ry="6"
+           x="-28"
+           y="-26"
+           width="55"
+           height="52"
+           class="key side"
+           id="rect35" />
+        <rect
+           rx="4"
+           ry="4"
+           x="-22"
+           y="-24"
+           width="43"
+           height="40"
+           class="key"
+           id="rect36" />
+        <text
+           x="0"
+           y="-4"
+           class="key tap"
+           id="text36">K</text>
+        <a
+           href="#SYMB"
+           id="a37">
+          <text
+             x="0"
+             y="24"
+             class="key hold layer-activator"
+             id="text37"
+             style="text-decoration:underline;text-decoration-line:underline">SYMB</text>
+        </a>
+      </g>
+      <g
+         transform="rotate(4,-1338.0389,10124.643)"
+         class="key keypos-18"
+         id="g39">
+        <rect
+           rx="6"
+           ry="6"
+           x="-28"
+           y="-26"
+           width="55"
+           height="52"
+           class="key side"
+           id="rect37" />
+        <rect
+           rx="4"
+           ry="4"
+           x="-22"
+           y="-24"
+           width="43"
+           height="40"
+           class="key"
+           id="rect38" />
+        <text
+           x="0"
+           y="-4"
+           class="key tap"
+           id="text38">L</text>
+        <text
+           x="0"
+           y="24"
+           class="key hold"
+           id="text39"><tspan
+             style="font-size:78%"
+             id="tspan38">RIGHT ALT</tspan></text>
+      </g>
+      <g
+         transform="rotate(10,-578.12439,4450.28)"
+         class="key keypos-19"
+         id="g41">
+        <rect
+           rx="6"
+           ry="6"
+           x="-28"
+           y="-26"
+           width="55"
+           height="52"
+           class="key side"
+           id="rect39" />
+        <rect
+           rx="4"
+           ry="4"
+           x="-22"
+           y="-24"
+           width="43"
+           height="40"
+           class="key"
+           id="rect40" />
+        <text
+           x="0"
+           y="-4"
+           class="key tap"
+           id="text40">;</text>
+        <text
+           x="0"
+           y="24"
+           class="key hold"
+           id="text41">RSHIFT</text>
+      </g>
+      <g
+         transform="rotate(-10,1211.4405,-89.810889)"
+         class="key keypos-20"
+         id="g43">
+        <rect
+           rx="6"
+           ry="6"
+           x="-28"
+           y="-26"
+           width="55"
+           height="52"
+           class="key side"
+           id="rect41" />
+        <rect
+           rx="4"
+           ry="4"
+           x="-22"
+           y="-24"
+           width="43"
+           height="40"
+           class="key"
+           id="rect42" />
+        <text
+           x="0"
+           y="-4"
+           class="key tap"
+           id="text42">TAB</text>
+        <text
+           x="0"
+           y="24"
+           class="key hold"
+           id="text43">LSHIFT</text>
+      </g>
+      <g
+         transform="rotate(-10,1322.9508,-442.85754)"
+         class="key keypos-21"
+         id="g44">
+        <rect
+           rx="6"
+           ry="6"
+           x="-28"
+           y="-26"
+           width="55"
+           height="52"
+           class="key side"
+           id="rect43" />
+        <rect
+           rx="4"
+           ry="4"
+           x="-22"
+           y="-24"
+           width="43"
+           height="40"
+           class="key"
+           id="rect44" />
+        <text
+           x="0"
+           y="-4"
+           class="key tap"
+           id="text44">Z</text>
+      </g>
+      <g
+         transform="rotate(-4,2567.354,-2089.3552)"
+         class="key keypos-22"
+         id="g46">
+        <rect
+           rx="6"
+           ry="6"
+           x="-28"
+           y="-26"
+           width="55"
+           height="52"
+           class="key side"
+           id="rect45" />
+        <rect
+           rx="4"
+           ry="4"
+           x="-22"
+           y="-24"
+           width="43"
+           height="40"
+           class="key"
+           id="rect46" />
+        <text
+           x="0"
+           y="-4"
+           class="key tap"
+           id="text46">X</text>
+      </g>
+      <g
+         transform="translate(212,140)"
+         class="key keypos-23"
+         id="g48">
+        <rect
+           rx="6"
+           ry="6"
+           x="-28"
+           y="-26"
+           width="55"
+           height="52"
+           class="key side"
+           id="rect47" />
+        <rect
+           rx="4"
+           ry="4"
+           x="-22"
+           y="-24"
+           width="43"
+           height="40"
+           class="key"
+           id="rect48" />
+        <text
+           x="0"
+           y="-4"
+           class="key tap"
+           id="text48">C</text>
+      </g>
+      <g
+         transform="translate(271,168)"
+         class="key keypos-24"
+         id="g51">
+        <rect
+           rx="6"
+           ry="6"
+           x="-28"
+           y="-26"
+           width="55"
+           height="52"
+           class="key side"
+           id="rect49" />
+        <rect
+           rx="4"
+           ry="4"
+           x="-22"
+           y="-24"
+           width="43"
+           height="40"
+           class="key"
+           id="rect50" />
+        <text
+           x="0"
+           y="-4"
+           class="key tap"
+           id="text50">V</text>
+        <text
+           x="0"
+           y="24"
+           class="key hold"
+           id="text51">RGUI</text>
+      </g>
+      <g
+         transform="translate(330,177)"
+         class="key keypos-25"
+         id="g52">
+        <rect
+           rx="6"
+           ry="6"
+           x="-28"
+           y="-26"
+           width="55"
+           height="52"
+           class="key side"
+           id="rect51" />
+        <rect
+           rx="4"
+           ry="4"
+           x="-22"
+           y="-24"
+           width="43"
+           height="40"
+           class="key"
+           id="rect52" />
+        <text
+           x="0"
+           y="-4"
+           class="key tap"
+           id="text52">B</text>
+      </g>
+      <g
+         transform="translate(520,177)"
+         class="key keypos-26"
+         id="g54">
+        <rect
+           rx="6"
+           ry="6"
+           x="-28"
+           y="-26"
+           width="55"
+           height="52"
+           class="key side"
+           id="rect53" />
+        <rect
+           rx="4"
+           ry="4"
+           x="-22"
+           y="-24"
+           width="43"
+           height="40"
+           class="key"
+           id="rect54" />
+        <text
+           x="0"
+           y="-4"
+           class="key tap"
+           id="text54">N</text>
+      </g>
+      <g
+         transform="translate(580,168)"
+         class="key keypos-27"
+         id="g57">
+        <rect
+           rx="6"
+           ry="6"
+           x="-28"
+           y="-26"
+           width="55"
+           height="52"
+           class="key side"
+           id="rect55" />
+        <rect
+           rx="4"
+           ry="4"
+           x="-22"
+           y="-24"
+           width="43"
+           height="40"
+           class="key"
+           id="rect56" />
+        <text
+           x="0"
+           y="-4"
+           class="key tap"
+           id="text56">M</text>
+        <text
+           x="0"
+           y="24"
+           class="key hold"
+           id="text57">RGUI</text>
+      </g>
+      <g
+         transform="translate(639,140)"
+         class="key keypos-28"
+         id="g58">
+        <rect
+           rx="6"
+           ry="6"
+           x="-28"
+           y="-26"
+           width="55"
+           height="52"
+           class="key side"
+           id="rect57" />
+        <rect
+           rx="4"
+           ry="4"
+           x="-22"
+           y="-24"
+           width="43"
+           height="40"
+           class="key"
+           id="rect58" />
+        <text
+           x="0"
+           y="-4"
+           class="key tap"
+           id="text58">,</text>
+      </g>
+      <g
+         transform="rotate(4,-2141.854,10095.371)"
+         class="key keypos-29"
+         id="g60">
+        <rect
+           rx="6"
+           ry="6"
+           x="-28"
+           y="-26"
+           width="55"
+           height="52"
+           class="key side"
+           id="rect59" />
+        <rect
+           rx="4"
+           ry="4"
+           x="-22"
+           y="-24"
+           width="43"
+           height="40"
+           class="key"
+           id="rect60" />
+        <text
+           x="0"
+           y="-4"
+           class="key tap"
+           id="text60">.</text>
+      </g>
+      <g
+         transform="rotate(10,-897.45083,4420.6297)"
+         class="key keypos-30"
+         id="g62">
+        <rect
+           rx="6"
+           ry="6"
+           x="-28"
+           y="-26"
+           width="55"
+           height="52"
+           class="key side"
+           id="rect61" />
+        <rect
+           rx="4"
+           ry="4"
+           x="-22"
+           y="-24"
+           width="43"
+           height="40"
+           class="key"
+           id="rect62" />
+        <text
+           x="0"
+           y="-4"
+           class="key tap"
+           id="text62">/</text>
+      </g>
+      <g
+         transform="rotate(10,-785.94047,4773.6764)"
+         class="key keypos-31"
+         id="g65">
+        <rect
+           rx="6"
+           ry="6"
+           x="-28"
+           y="-26"
+           width="55"
+           height="52"
+           class="key side"
+           id="rect63" />
+        <rect
+           rx="4"
+           ry="4"
+           x="-22"
+           y="-24"
+           width="43"
+           height="40"
+           class="key"
+           id="rect64" />
+        <text
+           x="0"
+           y="-4"
+           class="key tap"
+           id="text64">Enter</text>
+        <text
+           x="0"
+           y="24"
+           class="key hold"
+           id="text65">RSHFT</text>
+      </g>
+      <g
+         transform="translate(255,236)"
+         class="key keypos-32"
+         id="g67">
+        <rect
+           rx="6"
+           ry="6"
+           x="-28"
+           y="-26"
+           width="55"
+           height="52"
+           class="key side"
+           id="rect65" />
+        <rect
+           rx="4"
+           ry="4"
+           x="-22"
+           y="-24"
+           width="43"
+           height="40"
+           class="key"
+           id="rect66" />
+        <text
+           x="0"
+           y="-4"
+           class="key tap"
+           id="text66">TAB</text>
+        <a
+           href="#FUNC"
+           id="a67">
+          <text
+             x="0"
+             y="24"
+             class="key hold layer-activator"
+             id="text67"
+             style="text-decoration:underline;text-decoration-line:underline">FUNC</text>
+        </a>
+      </g>
+      <g
+         transform="rotate(15,-770.47988,1337.8207)"
+         class="key keypos-33"
+         id="g69">
+        <rect
+           rx="6"
+           ry="6"
+           x="-28"
+           y="-26"
+           width="55"
+           height="52"
+           class="key side"
+           id="rect67" />
+        <rect
+           rx="4"
+           ry="4"
+           x="-22"
+           y="-24"
+           width="43"
+           height="40"
+           class="key"
+           id="rect68" />
+        <text
+           x="0"
+           y="-4"
+           class="key tap"
+           id="text68">ESC</text>
+        <a
+           href="#MOUS"
+           id="a69">
+          <text
+             x="0"
+             y="24"
+             class="key hold layer-activator"
+             id="text69"
+             style="text-decoration:underline;text-decoration-line:underline">MOUS</text>
+        </a>
+      </g>
+      <g
+         transform="rotate(30,-313.32686,845.95568)"
+         class="key keypos-34"
+         id="g71">
+        <rect
+           rx="6"
+           ry="6"
+           x="-28"
+           y="-26"
+           width="55"
+           height="52"
+           class="key side"
+           id="rect69" />
+        <rect
+           rx="4"
+           ry="4"
+           x="-22"
+           y="-24"
+           width="43"
+           height="40"
+           class="key"
+           id="rect70" />
+        <text
+           x="0"
+           y="-4"
+           class="key tap"
+           id="text70">SPACE</text>
+        <text
+           x="0"
+           y="24"
+           class="key hold"
+           id="text71">LGUI</text>
+      </g>
+      <g
+         transform="rotate(-30,738.82686,-742.03194)"
+         class="key keypos-35"
+         id="g73">
+        <rect
+           rx="6"
+           ry="6"
+           x="-28"
+           y="-26"
+           width="55"
+           height="52"
+           class="key side"
+           id="rect71" />
+        <rect
+           rx="4"
+           ry="4"
+           x="-22"
+           y="-24"
+           width="43"
+           height="40"
+           class="key"
+           id="rect72" />
+        <text
+           x="0"
+           y="-4"
+           class="key tap"
+           id="text72">SPACE</text>
+        <text
+           x="0"
+           y="24"
+           class="key hold"
+           id="text73">LGUI</text>
+      </g>
+      <g
+         transform="rotate(-15,1195.9799,-1894.1727)"
+         class="key keypos-36"
+         id="g76">
+        <rect
+           rx="6"
+           ry="6"
+           x="-28"
+           y="-26"
+           width="55"
+           height="52"
+           class="key side"
+           id="rect73" />
+        <rect
+           rx="4"
+           ry="4"
+           x="-22"
+           y="-24"
+           width="43"
+           height="40"
+           class="key"
+           id="rect74" />
+        <text
+           x="0"
+           y="-4"
+           class="key tap"
+           id="text75"><tspan
+             x="0"
+             dy="-1.2em"
+             id="tspan74">BACK</tspan><tspan
+             x="0"
+             dy="1.2em"
+             id="tspan75">SPACE</tspan></text>
+        <a
+           href="#NAVI"
+           id="a76">
+          <text
+             x="0"
+             y="24"
+             class="key hold layer-activator"
+             id="text76"
+             style="text-decoration:underline;text-decoration-line:underline">NAVI</text>
+        </a>
+      </g>
+      <g
+         transform="translate(596,236)"
+         class="key keypos-37"
+         id="g78">
+        <rect
+           rx="6"
+           ry="6"
+           x="-28"
+           y="-26"
+           width="55"
+           height="52"
+           class="key side"
+           id="rect76" />
+        <rect
+           rx="4"
+           ry="4"
+           x="-22"
+           y="-24"
+           width="43"
+           height="40"
+           class="key"
+           id="rect77" />
+        <text
+           x="0"
+           y="-4"
+           class="key tap"
+           id="text78">CMENU</text>
+      </g>
+    </g>
+  </g>
+</svg>
