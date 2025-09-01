@@ -90,6 +90,20 @@
   ;2 (tap-hold-release-keys $tap-time $hold-pinky (multi ret @tap) rsft $right-hand-keys)
 
 
+  ;; Home row for the function
+  a3 (tap-hold-release-keys $tap-time $hold-pinky (multi f11 @tap) lsft $left-hand-keys)
+  s3 (tap-hold-release-keys $tap-time $hold-ring (multi f12 @tap) ralt $left-hand-keys)
+  f3 (tap-hold-release-keys $tap-time $hold-index (multi f14 @tap) lctl $left-hand-keys)
+  g3 (tap-hold-release-keys $tap-time $hold-index (multi f15 @tap) lalt $left-hand-keys)
+  v3 (tap-hold-release-keys $tap-time $hold-index (multi f24 @tap) rmet $left-hand-keys)
+  ;;
+  m3 (tap-hold-release-keys $tap-time $hold-index (multi XX @tap) rmet $right-hand-keys)
+  h3 (tap-hold-release-keys $tap-time $hold-index (multi f16 @tap) lalt $right-hand-keys)
+  j3 (tap-hold-release-keys $tap-time $hold-index (multi f17 @tap) lctl $right-hand-keys)
+  l3 (tap-hold-release-keys $tap-time $hold-ring (multi f19 @tap) ralt $right-hand-keys)
+  ;3 (tap-hold-release-keys $tap-time $hold-pinky (multi f20 @tap) rsft $right-hand-keys)
+
+
   ;; Home row for the nav layer
   v4 (tap-hold-release-keys $tap-time $hold-index (multi XX @tap) rmet $left-hand-keys)
   ;;
@@ -103,7 +117,7 @@
   tab (tap-hold $tap-time $hold-thumb tab (layer-toggle navigation))
   caps (tap-hold $tap-time $hold-pinky caps ralt)
   ;; Function layer:
-  lmet (tap-hold $tap-time $hold-thumb tab (layer-toggle fn))
+  lmet (one-shot 2000 (layer-while-held fn))
   lalt (tap-hold $tap-time $hold-pinky esc (layer-toggle mouse))
   ;; Symbol layer:
   spc (tap-hold $tap-time $hold-thumb spc lmet)
@@ -154,8 +168,8 @@
 
 (deflayer fn
    f1   f2 f3  f4  f5    f6  f7  f8  f9  f10
-   f11 f12 f13 f14 f15   f16 f17 f18 f19 f20
-   f21 f22 f23 f24 XX    XX  XX  XX  XX  XX
+   @a3 @s3 f13 @f3 @g3   @h3 @j3 f18 @l3 @;3
+   f21 f22 f23 @v3 XX    XX  @m3 XX  XX  XX
    _ _ _ _ _ _ _ _ _ _ _ _
 )
 
