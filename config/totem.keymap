@@ -161,10 +161,10 @@
         symbols {
             label = "SYMB";
             bindings = <
-        &kp NUMBER_1       &kp NUMBER_2        &kp NUMBER_3       &kp NUMBER_4            &kp N5             &kp NUMBER_6        &kp N7                  &kp N8         &kp N9                &kp N0
-        &hml LSHFT ESCAPE  &hml RIGHT_ALT TAB  &hml2 SYMB DELETE  &hml LCTRL BACKSPACE    &hml LEFT_ALT INS  &hmr LEFT_ALT LEFT  &hmr RCTRL DOWN         &hmr2 SYMB UP  &hmr RIGHT_ALT RIGHT  &hmr RSHFT ENTER
-&trans  &kp GRAVE          &kp MINUS           &kp EQUAL          &hml RGUI LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH       &hmr RGUI SINGLE_QUOTE  &kp COMMA      &kp PERIOD            &kp SLASH         &trans
-                                               &trans             &trans                  &trans             &trans              &trans                  &trans
+        &kp NUMBER_1       &kp NUMBER_2        &kp NUMBER_3       &kp NUMBER_4            &kp N5                   &kp NUMBER_6        &kp N7                  &kp N8         &kp N9                &kp N0
+        &hml LSHFT ESCAPE  &hml RIGHT_ALT INS  &hml2 SYMB DELETE  &hml LCTRL TAB          &hml LEFT_ALT BACKSPACE  &hmr LEFT_ALT LEFT  &hmr RCTRL DOWN         &hmr2 SYMB UP  &hmr RIGHT_ALT RIGHT  &hmr RSHFT ENTER
+&trans  &kp GRAVE          &kp MINUS           &kp EQUAL          &hml RGUI LEFT_BRACKET  &kp RIGHT_BRACKET        &kp BACKSLASH       &hmr RGUI SINGLE_QUOTE  &kp COMMA      &kp PERIOD            &kp SLASH         &trans
+                                               &trans             &trans                  &trans                   &trans              &trans                  &trans
             >;
         };
 
@@ -181,10 +181,10 @@
         navigation {
             label = "NAVI";
             bindings = <
-        &none       &none    &none    &none          &none      &kp HOME  &kp DEL        &kp INS    &kp END    &kp BACKSPACE
-        &kp ESCAPE  &kp TAB  &kp DEL  &kp BACKSPACE  &kp INS    &kp LEFT  &kp DOWN       &kp UP     &kp RIGHT  &kp ENTER
-&trans  &none       &none    &none    &none          &none      &none     &kp PAGE_DOWN  &kp PG_UP  &none      &none          &trans
-                             &trans   &trans         &trans     &trans    &trans         &trans
+        &none       &none    &none    &none    &none          &kp HOME  &kp DEL        &kp INS    &kp END    &kp BACKSPACE
+        &kp ESCAPE  &kp INS  &kp DEL  &kp TAB  &kp BACKSPACE  &kp LEFT  &kp DOWN       &kp UP     &kp RIGHT  &kp ENTER
+&trans  &none       &none    &none    &none    &none          &none     &kp PAGE_DOWN  &kp PG_UP  &none      &none          &trans
+                             &trans   &trans   &trans         &trans    &trans         &trans
             >;
         };
 

@@ -76,10 +76,10 @@
 
   ;; Home row for the symb layer
   a2 (tap-hold-release-keys $tap-time $hold-pinky (multi esc @tap) lsft $left-hand-keys)
-  s2 (tap-hold-release-keys $tap-time $hold-ring (multi tab @tap) ralt $left-hand-keys)
+  s2 (tap-hold-release-keys $tap-time $hold-ring (multi ins @tap) ralt $left-hand-keys)
   d2 (tap-hold-release-keys $tap-time $hold-middle (multi del @tap) (layer-toggle symb) $left-hand-keys)
-  f2 (tap-hold-release-keys $tap-time $hold-index (multi bspc @tap) lctl $left-hand-keys)
-  g2 (tap-hold-release-keys $tap-time $hold-index (multi ins @tap) lalt $left-hand-keys)
+  f2 (tap-hold-release-keys $tap-time $hold-index (multi tab @tap) lctl $left-hand-keys)
+  g2 (tap-hold-release-keys $tap-time $hold-index (multi bspc @tap) lalt $left-hand-keys)
   v2 (tap-hold-release-keys $tap-time $hold-index (multi [ @tap) rmet $left-hand-keys)
   ;;
   m2 (tap-hold-release-keys $tap-time $hold-index (multi ' @tap) rmet $right-hand-keys)
