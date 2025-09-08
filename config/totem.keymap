@@ -51,13 +51,13 @@
 
         combo_boot_left {
             timeout-ms = <100>;
-            key-positions = <10 11 12 14>; // Combo `a+s+d+g`
+            key-positions = <0 1 2 4>; // Combo `Q+W+E+T`
             bindings = <&bootloader>;
         };
 
         combo_boot_right {
             timeout-ms = <100>;
-            key-positions = <15 17 18 19>; // Combo `h+k+l+;`
+            key-positions = <5 7 8 9>; // Combo `Y+I+O+P`
             bindings = <&bootloader>;
         };
 
