@@ -68,7 +68,7 @@
   ;;
   m (tap-hold-release-keys $tap-time $hold-index (multi m @tap) rmet $right-hand-keys)
   h (tap-hold-release-keys $tap-time $hold-index (multi h @tap) lalt $right-hand-keys)
-  j (tap-hold-release-keys $tap-time $hold-index (multi j @tap) lctl $right-hand-keys)
+  j (tap-hold-release-keys $tap-time $hold-index (multi j @tap) rctl $right-hand-keys)
   k (tap-hold-release-keys $tap-time $hold-middle (multi k @tap) (layer-toggle symb) $right-hand-keys)
   l (tap-hold-release-keys $tap-time $hold-ring (multi l @tap) ralt $right-hand-keys)
   ; (tap-hold-release-keys $tap-time $hold-pinky (multi ; @tap) rsft $right-hand-keys)
@@ -84,7 +84,7 @@
   ;;
   m2 (tap-hold-release-keys $tap-time $hold-index (multi ' @tap) rmet $right-hand-keys)
   h2 (tap-hold-release-keys $tap-time $hold-index (multi left @tap) lalt $right-hand-keys)
-  j2 (tap-hold-release-keys $tap-time $hold-index (multi down @tap) lctl $right-hand-keys)
+  j2 (tap-hold-release-keys $tap-time $hold-index (multi down @tap) rctl $right-hand-keys)
   k2 (tap-hold-release-keys $tap-time $hold-middle (multi up @tap) (layer-toggle symb) $right-hand-keys)
   l2 (tap-hold-release-keys $tap-time $hold-ring (multi right @tap) ralt $right-hand-keys)
   ;2 (tap-hold-release-keys $tap-time $hold-pinky (multi ret @tap) rsft $right-hand-keys)
@@ -99,7 +99,7 @@
   ;;
   m3 (tap-hold-release-keys $tap-time $hold-index (multi XX @tap) rmet $right-hand-keys)
   h3 (tap-hold-release-keys $tap-time $hold-index (multi f16 @tap) lalt $right-hand-keys)
-  j3 (tap-hold-release-keys $tap-time $hold-index (multi f17 @tap) lctl $right-hand-keys)
+  j3 (tap-hold-release-keys $tap-time $hold-index (multi f17 @tap) rctl $right-hand-keys)
   l3 (tap-hold-release-keys $tap-time $hold-ring (multi f19 @tap) ralt $right-hand-keys)
   ;3 (tap-hold-release-keys $tap-time $hold-pinky (multi f20 @tap) rsft $right-hand-keys)
 
