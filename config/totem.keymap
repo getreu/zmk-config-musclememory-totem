@@ -39,7 +39,7 @@
 
         combo_caps {
             timeout-ms = <100>;
-            key-positions = <34 35>; // Combo `left space + right space`
+            key-positions = <33 36>; // Combo `thumb ESC + thumb Backspace`
             bindings = <&kp CAPSLOCK>;
         };
 
