@@ -1158,7 +1158,7 @@ path.combo { stroke: #7f7f7f; }
            x="0"
            y="-4"
            class="key tap"
-           id="text64">RET</text>
+           id="text64">ENTER</text>
         <text
            x="0"
            y="24"
@@ -1300,7 +1300,7 @@ path.combo { stroke: #7f7f7f; }
            x="0"
            y="-4"
            class="key tap"
-           id="text72">SPACE</text>
+           id="text72">ENTER</text>
         <text
            x="0"
            y="24"
