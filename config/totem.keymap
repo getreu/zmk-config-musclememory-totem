@@ -21,10 +21,11 @@
 #define THUMBS 37 // thumb cluster for both hands (only non-switching)
 #define BASE  0
 #define SYMB  1
-#define FUNC  2
-#define NAVI  3
-#define MOUS  4
-#define SYST  5
+#define NPAD  2
+#define FUNC  3
+#define NAVI  4
+#define MOUS  5
+#define SYST  6
 
 &mt {
     quick-tap-ms = <100>;
@@ -37,9 +38,9 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_caps {
+        combo_caps1 {
             timeout-ms = <100>;
-            key-positions = <33 36>; // Combo `thumb ESC + thumb Backspace`
+            key-positions = <32 37>; // Combo `fn + compose`
             bindings = <&kp CAPSLOCK>;
         };
 
@@ -47,6 +48,12 @@
             timeout-ms = <100>;
             key-positions = <20 31>; // Combo `right-shift+left-shift`
             bindings = <&kp CAPSLOCK>;
+        };
+
+        combo_symbol {
+            timeout-ms = <100>;
+            key-positions = <33 36>; // Combo `thumb ESC + thumb Backspace`
+            bindings = <&tog SYMB>;
         };
 
         combo_boot_left {
@@ -119,29 +126,103 @@
             #binding-cells = <2>;
             flavor = "balanced";
             require-prior-idle-ms = <150>;
-            tapping-term-ms = <280>;
+            tapping-term-ms = <500>;
             quick-tap-ms = <175>;
             bindings = <&mo>, <&kp>;
 
             hold-trigger-key-positions = <KEYS_L THUMBS>;
             hold-trigger-on-release;
         };
+
+        Compose1ToNumpad: Compose1ToNumpad {
+            compatible = "zmk,behavior-tap-dance";
+            label = "Compose1ToNumpad";
+            #binding-cells = <0>;
+            bindings = <&kp K_APP>, <&tog 2>;
+
+            tapping-term-ms = <500>;
+        };
+
+        Esc1ToMouse: Esc1ToMouse {
+            compatible = "zmk,behavior-hold-tap";
+            label = "ESCMOUSE";
+            #binding-cells = <2>;
+            bindings = <&mo>, <&esc2base>;
+
+            tapping-term-ms = <230>;
+        };
+
+        Bspc1ToNavigation: Bspc1ToNavigation {
+            compatible = "zmk,behavior-hold-tap";
+            label = "BSPCNAVIGATION";
+            bindings = <&mo>, <&bksp2base>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <230>;
+        };
+
+        Compose1ToBase: Compose1ToBase {
+            compatible = "zmk,behavior-tap-dance";
+            label = "COMPOSENUMPAD";
+            #binding-cells = <0>;
+            bindings = <&compose2base>, <&to 0>;
+
+            tapping-term-ms = <500>;
+        };
+
+        Space1Lgui: Space1Lgui {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SPACELGUI";
+            bindings = <&kp>, <&space2base>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <230>;
+        };
+
+        Ret1Lgui: Ret1Lgui {
+            compatible = "zmk,behavior-hold-tap";
+            label = "RETLGUI";
+            bindings = <&kp>, <&ret2base>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <230>;
+        };
     };
 
     macros {
-        gif: gif {
-            label = "giphy";
+        esc2base: esc2base {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LSHFT>,
-                <&macro_tap>,
-                <&kp N2>,
-                <&macro_release>,
-                <&kp LSHFT>,
-                <&macro_tap>,
-                <&kp G &kp I &kp F>;
+            bindings = <&kp ESC &to 0>;
+            label = "ESC2BASE";
+        };
+
+        space2base: space2base {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE &to 0>;
+            label = "SPACE2BASE";
+        };
+
+        ret2base: ret2base {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RET &to 0>;
+            label = "RET2BASE";
+        };
+
+        bksp2base: bksp2base {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp BACKSPACE &to 0>;
+            label = "BKSP2BASE";
+        };
+
+        compose2base: compose2base {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp C_MENU &to 0>;
+            label = "COMPOSE2BASE";
         };
     };
 
@@ -151,40 +232,50 @@
         base_layer {
             label = "BASE";
             bindings = <
-                 &kp Q          &kp W             &kp E         &kp R         &kp T              &kp Y            &kp U                 &kp I            &kp O             &kp P
-                 &hml LSHIFT A  &hml RIGHT_ALT S  &hml2 SYMB D  &hml LCTRL F  &hml LEFT_ALT G    &hmr LEFT_ALT H  &hmr RCTRL J          &hmr2 SYMB K     &hmr RIGHT_ALT L  &hmr RSHIFT SEMICOLON
-&hml LSHIFT TAB  &kp Z          &kp X             &kp C         &hml RGUI V   &kp B              &kp N            &hmr RGUI M           &kp COMMA        &kp DOT           &kp SLASH              &hmr RSHFT ENTER
-                                                  &sl FUNC      &lt MOUS ESC  &hml LGUI SPACE    &hmr LGUI ENTER  &hmr2 NAVI BACKSPACE  &kp K_CMENU
+                 &kp Q          &kp W             &kp E      &kp R         &kp T              &kp Y            &kp U              &kp I       &kp O             &kp P
+                 &hml LSHIFT A  &hml RIGHT_ALT S  &hml2 1 D  &hml LCTRL F  &hml LEFT_ALT G    &hmr LEFT_ALT H  &hmr RCTRL J       &hmr2 1 K   &hmr RIGHT_ALT L  &hmr RSHIFT SEMICOLON
+&hml LSHIFT TAB  &kp Z          &kp X             &kp C      &hml RGUI V   &kp B              &kp N            &hmr RGUI M        &kp COMMA   &kp DOT           &kp SLASH              &hmr RSHFT ENTER
+                                                  &sl 3      &lt 5 ESC     &hml LGUI SPACE    &hmr LGUI ENTER  &hmr2 4 BACKSPACE  &Compose1ToNumpad
             >;
         };
 
         symbols {
             label = "SYMB";
             bindings = <
-        &kp NUMBER_1       &kp NUMBER_2        &kp NUMBER_3       &kp NUMBER_4            &kp N5                   &kp NUMBER_6        &kp N7                  &kp N8         &kp N9                &kp N0
-        &hml LSHFT ESCAPE  &hml RIGHT_ALT INS  &hml2 SYMB DELETE  &hml LCTRL TAB          &hml LEFT_ALT BACKSPACE  &hmr LEFT_ALT LEFT  &hmr RCTRL DOWN         &hmr2 SYMB UP  &hmr RIGHT_ALT RIGHT  &hmr RSHFT ENTER
-&trans  &kp GRAVE          &kp MINUS           &kp EQUAL          &hml RGUI LEFT_BRACKET  &kp RIGHT_BRACKET        &kp BACKSLASH       &hmr RGUI SINGLE_QUOTE  &kp COMMA      &kp PERIOD            &kp SLASH         &trans
-                                               &trans             &trans                  &trans                   &trans              &trans                  &trans
+        &kp NUMBER_1       &kp NUMBER_2        &kp NUMBER_3    &kp NUMBER_4            &kp N5                     &kp NUMBER_6        &kp N7                  &kp N8          &kp N9                &kp N0
+        &hml LSHFT ESCAPE  &hml RIGHT_ALT INS  &hml2 2 DELETE  &hml LCTRL TAB          &hml LEFT_ALT BACKSPACE    &hmr LEFT_ALT LEFT  &hmr RCTRL DOWN         &hmr2 2 UP      &hmr RIGHT_ALT RIGHT  &hmr RSHFT ENTER
+&trans  &kp GRAVE          &kp MINUS           &kp EQUAL       &hml RGUI LEFT_BRACKET  &kp RIGHT_BRACKET          &kp BACKSLASH       &hmr RGUI SINGLE_QUOTE  &kp COMMA       &kp PERIOD            &kp SLASH         &trans
+                                               &trans          &Esc1ToMouse 5 0           &Space1Lgui LGUI 0          &Ret1Lgui LCMD 0     &Bspc1ToNavigation 4 0     &Compose1ToBase
+            >;
+        };
+
+        numpad {
+            label = "NPAD";
+            bindings = <
+        &kp U          &kp D            &kp E             &kp F          &kp N                &kp KP_SUBTRACT  &kp KP_NUMBER_7      &kp KP_NUMBER_8      &kp KP_NUMBER_9  &kp KP_PLUS
+        &kp KP_DIVIDE  &kp KP_MULTIPLY  &hml2 1 KP_EQUAL  &kp TAB        &kp BACKSPACE        &kp KP_NUMLOCK   &kp KP_NUMBER_4      &hml2 1 KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_ENTER
+&trans  &kp X          &kp A            &kp B             &kp C          &kp COLON            &kp KP_N0        &kp KP_NUMBER_1      &kp KP_NUMBER_2      &kp KP_NUMBER_3  &kp KP_DOT    &trans
+                                        &trans            &Esc1ToMouse 5 0  &Space1Lgui LGUI 0    &Ret1Lgui LGUI 0  &Bspc1ToNavigation 4 0  &Compose1ToBase
             >;
         };
 
         func {
             label = "FUNC";
             bindings = <
-        &kp F1           &kp F2              &kp F3   &kp F4          &kp F5             &kp F6             &kp F7          &kp F8   &kp F9              &kp F10
-        &hml LSHIFT F11  &hml RIGHT_ALT F12  &kp F13  &hml LCTRL F14  &hml LEFT_ALT F15  &hmr LEFT_ALT F16  &hmr RCTRL F17  &kp F18  &hmr RIGHT_ALT F19  &hmr RSHIFT F20
-&trans  &kp F21          &kp F22             &kp F23  &hml RGUI F24   &none              &none              &kp RGUI        &none    &none               &none    &trans
-                                             &trans   &trans          &trans             &trans             &trans          &trans
+        &kp F1           &kp F2              &kp F3   &kp F4          &kp F5               &kp F6             &kp F7          &kp F8   &kp F9              &kp F10
+        &hml LSHIFT F11  &hml RIGHT_ALT F12  &kp F13  &hml LCTRL F14  &hml LEFT_ALT F15    &hmr LEFT_ALT F16  &hmr RCTRL F17  &kp F18  &hmr RIGHT_ALT F19  &hmr RSHIFT F20
+&trans  &kp F21          &kp F22             &kp F23  &hml RGUI F24   &none                &none              &kp RGUI        &none    &none               &none            &trans
+                                             &trans   &trans          &trans               &trans             &trans          &trans
             >;
         };
 
         navigation {
             label = "NAVI";
             bindings = <
-        &none       &none    &none    &none    &none          &kp HOME  &kp DEL        &kp INS    &kp END    &kp BACKSPACE
-        &kp ESCAPE  &kp INS  &kp DEL  &kp TAB  &kp BACKSPACE  &kp LEFT  &kp DOWN       &kp UP     &kp RIGHT  &kp ENTER
-&trans  &none       &none    &none    &none    &none          &none     &kp PAGE_DOWN  &kp PG_UP  &none      &none          &trans
-                             &trans   &trans   &trans         &trans    &trans         &trans
+        &none       &none    &none    &none    &none            &kp HOME  &kp DEL        &kp INS    &kp END    &kp BACKSPACE
+        &kp ESCAPE  &kp INS  &kp DEL  &kp TAB  &kp BACKSPACE    &kp LEFT  &kp DOWN       &kp UP     &kp RIGHT  &kp ENTER
+&trans  &none       &none    &none    &none    &none            &none     &kp PAGE_DOWN  &kp PG_UP  &none      &none          &trans
+                             &trans   &trans   &trans           &trans    &trans         &trans
             >;
         };
 
