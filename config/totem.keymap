@@ -252,9 +252,9 @@
         numpad {
             label = "NPAD";
             bindings = <
-        &kp U          &kp D            &kp E             &kp F          &kp N                &kp KP_SUBTRACT  &kp KP_NUMBER_7      &kp KP_NUMBER_8      &kp KP_NUMBER_9  &kp KP_PLUS
+        &kp U          &kp D            &kp E             &kp F          &kp N                &kp KP_SUBTRACT  &kp KP_NUMBER_7      &kp KP_NUMBER_8      &kp KP_NUMBER_9  &kp KP_N0
         &kp KP_DIVIDE  &kp KP_MULTIPLY  &hml2 1 KP_EQUAL  &kp TAB        &kp BACKSPACE        &kp KP_NUMLOCK   &kp KP_NUMBER_4      &hml2 1 KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_ENTER
-&trans  &kp X          &kp A            &kp B             &kp C          &kp COLON            &kp KP_N0        &kp KP_NUMBER_1      &kp KP_NUMBER_2      &kp KP_NUMBER_3  &kp KP_DOT    &trans
+&trans  &kp X          &kp A            &kp B             &kp C          &kp COLON            &kp KP_PLUS      &kp KP_NUMBER_1      &kp KP_NUMBER_2      &kp KP_NUMBER_3  &kp KP_DOT    &trans
                                         &trans            &Esc1ToMouse 5 0  &Space1Lgui LGUI 0    &Ret1Lgui LGUI 0  &Bspc1ToNavigation 4 0  &Compose1ToBase
             >;
         };
