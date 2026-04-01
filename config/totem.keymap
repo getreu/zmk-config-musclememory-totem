@@ -235,7 +235,7 @@
                  &kp Q          &kp W             &kp E      &kp R         &kp T              &kp Y            &kp U              &kp I       &kp O             &kp P
                  &hml LSHIFT A  &hml RIGHT_ALT S  &hml2 1 D  &hml LCTRL F  &hml LEFT_ALT G    &hmr LEFT_ALT H  &hmr RCTRL J       &hmr2 1 K   &hmr RIGHT_ALT L  &hmr RSHIFT SEMICOLON
 &hml LSHIFT TAB  &kp Z          &kp X             &kp C      &hml RGUI V   &kp B              &kp N            &hmr RGUI M        &kp COMMA   &kp DOT           &kp SLASH              &hmr RSHFT ENTER
-                                                  &sl 3      &lt 5 ESC     &hml LGUI SPACE    &hmr LGUI ENTER  &hmr2 4 BACKSPACE  &Compose1ToNumpad
+                                                  &sl 3      &lt 5 ESC     &mt LGUI SPACE     &mt LGUI ENTER   &lt 4 BACKSPACE    &Compose1ToNumpad
             >;
         };
 
@@ -245,7 +245,7 @@
         &kp NUMBER_1       &kp NUMBER_2        &kp NUMBER_3    &kp NUMBER_4            &kp N5                     &kp NUMBER_6        &kp N7                  &kp N8          &kp N9                &kp N0
         &hml LSHFT ESCAPE  &hml RIGHT_ALT INS  &hml2 2 DELETE  &hml LCTRL TAB          &hml LEFT_ALT BACKSPACE    &hmr LEFT_ALT LEFT  &hmr RCTRL DOWN         &hmr2 2 UP      &hmr RIGHT_ALT RIGHT  &hmr RSHFT ENTER
 &trans  &kp GRAVE          &kp MINUS           &kp EQUAL       &hml RGUI LEFT_BRACKET  &kp RIGHT_BRACKET          &kp BACKSLASH       &hmr RGUI SINGLE_QUOTE  &kp COMMA       &kp PERIOD            &kp SLASH         &trans
-                                               &trans          &Esc1ToMouse 5 0           &Space1Lgui LGUI 0          &Ret1Lgui LCMD 0     &Bspc1ToNavigation 4 0     &Compose1ToBase
+                                               &trans          &to 0                   &trans                     &trans              &trans                  &to 0
             >;
         };
 
@@ -255,7 +255,7 @@
         &kp U          &kp D            &kp E             &kp F          &kp N                &kp KP_SUBTRACT  &kp KP_NUMBER_7      &kp KP_NUMBER_8      &kp KP_NUMBER_9  &kp KP_N0
         &kp KP_DIVIDE  &kp KP_MULTIPLY  &hml2 1 KP_EQUAL  &kp TAB        &kp BACKSPACE        &kp KP_NUMLOCK   &kp KP_NUMBER_4      &hml2 1 KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_ENTER
 &trans  &kp X          &kp A            &kp B             &kp C          &kp COLON            &kp KP_PLUS      &kp KP_NUMBER_1      &kp KP_NUMBER_2      &kp KP_NUMBER_3  &kp KP_DOT    &trans
-                                        &trans            &Esc1ToMouse 5 0  &Space1Lgui LGUI 0    &Ret1Lgui LGUI 0  &Bspc1ToNavigation 4 0  &Compose1ToBase
+                                        &trans            &to 0          &trans               &trans           &trans               &to 0
             >;
         };
 
@@ -295,7 +295,7 @@
                 &bt BT_CLR    &none         &none         &none         &sys_reset      &sys_reset        &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &none  &none
                 &none         &none         &out OUT_USB  &out OUT_BLE  &none           &kp C_MUTE        &kp C_VOL_DN          &kp C_VOL_UP          &none  &none
 &bt BT_CLR_ALL  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp K_PLAY_PAUSE  &kp K_PREV            &kp C_NEXT            &none  &none  &none
-                                            &trans        &trans        &trans          &trans            &trans                &trans
+                                           &trans        &trans        &trans          &trans            &trans                &trans
             >;
         };
     };
