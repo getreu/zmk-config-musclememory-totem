@@ -16,9 +16,8 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 
-#define KEYS_L 0 1 2 3 4  10 11 12 13 14  20 21 22 23 24 25  // left hand
-#define KEYS_R 5 6 7 8 9  15 16 17 18 19  26 27 28 29 30 31  // right hand
-#define THUMBS 37 // thumb cluster for both hands (only non-switching)
+#define KEYS_L 0 1 2 3 4  10 11 12 13 14  20 21 22 23 24 25  32 33 34 // left hand
+#define KEYS_R 5 6 7 8 9  15 16 17 18 19  26 27 28 29 30 31  35 36 37 // right hand
 #define BASE  0
 #define SYMB  1
 #define NPAD  2
@@ -110,7 +109,7 @@
             quick-tap-ms = <175>;
             bindings = <&mo>, <&kp>;
 
-            hold-trigger-key-positions = <KEYS_R THUMBS>;
+            hold-trigger-key-positions = <KEYS_R>;
             hold-trigger-on-release;
         };
 
@@ -123,7 +122,7 @@
             quick-tap-ms = <175>;
             bindings = <&mo>, <&kp>;
 
-            hold-trigger-key-positions = <KEYS_L THUMBS>;
+            hold-trigger-key-positions = <KEYS_L>;
             hold-trigger-on-release;
         };
 
