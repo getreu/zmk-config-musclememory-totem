@@ -132,7 +132,9 @@
             #binding-cells = <0>;
             bindings = <&kp K_APP>, <&to 2>;
 
-            tapping-term-ms = <230>;
+            // Longer window so the second tap still lands despite the ~100ms
+            // combo delay on the compose key (combo_caps1, position 37).
+            tapping-term-ms = <350>;
         };
 
         npo: numpad_operator {
