@@ -185,7 +185,7 @@
             bindings = <
         &kp F1           &kp F2              &kp F3   &kp F4          &kp F5               &kp F6             &kp F7          &kp F8   &kp F9              &kp F10
         &hml LSHIFT F11  &hml RIGHT_ALT F12  &kp F13  &hml LCTRL F14  &hml LEFT_ALT F15    &hmr LEFT_ALT F16  &hmr RCTRL F17  &kp F18  &hmr RIGHT_ALT F19  &hmr RSHIFT F20
-&trans  &kp F21          &kp F22             &kp F23  &hml RGUI F24   &none                &none              &kp RGUI        &none    &none               &none            &trans
+&trans  &kp F21          &kp F22             &kp F23  &hml RGUI F24   &none                &none              &kp RGUI        &none    &none               &mo SYST         &trans
                                              &trans   &trans          &trans               &trans             &trans          &trans
             >;
         };
