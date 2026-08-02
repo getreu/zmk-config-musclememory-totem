@@ -134,6 +134,17 @@
 
             tapping-term-ms = <230>;
         };
+
+        npo: numpad_operator {
+            // Numpad arithmetic key: tap = numpad digit/key, hold = secondary
+            // operator, tap-then-hold = repeat the numpad key (quick-tap).
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
+            bindings = <&kp>, <&kp>;
+        };
     };
 
     keymap {
@@ -162,10 +173,10 @@
         numpad {
             label = "NPAD";
             bindings = <
-        &kp U          &kp D            &kp E             &kp F    &kp N            &kp KP_SUBTRACT  &kp KP_NUMBER_7  &kp KP_NUMBER_8      &kp KP_NUMBER_9  &kp KP_N0
-        &kp KP_DIVIDE  &kp KP_MULTIPLY  &hml2 1 KP_EQUAL  &kp TAB  &kp BACKSPACE    &kp KP_NUMLOCK   &kp KP_NUMBER_4  &hml2 1 KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_ENTER
-&trans  &kp X          &kp A            &kp B             &kp C    &kp COLON        &kp KP_PLUS      &kp KP_NUMBER_1  &kp KP_NUMBER_2      &kp KP_NUMBER_3  &kp KP_DOT    &trans
-                                        &trans            &to 0    &trans           &trans           &trans           &to 0
+        &trans  &trans  &trans  &trans  &trans    &npo KP_DIVIDE KP_SUBTRACT  &kp KP_NUMBER_7         &kp KP_NUMBER_8      &kp KP_NUMBER_9             &npo KP_EQUAL KP_N0
+        &trans  &trans  &trans  &trans  &trans    &hmr LEFT_ALT KP_NUMLOCK    &hmr RCTRL KP_NUMBER_4  &hmr2 1 KP_NUMBER_5  &hmr RIGHT_ALT KP_NUMBER_6  &hmr RSHIFT KP_ENTER
+&trans  &trans  &trans  &trans  &trans  &trans    &npo KP_MULTIPLY KP_PLUS    &hmr RGUI KP_NUMBER_1   &kp KP_NUMBER_2      &kp KP_NUMBER_3             &npo KP_COMMA KP_DOT    &trans
+                                &trans  &to 0     &trans    &trans  &trans  &to 0
             >;
         };
 
