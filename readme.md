@@ -12,6 +12,11 @@ your input devices.
 Read the accompanying blog post here:
 [Jens Getreu's blog - Muscle memory friendly home row mods](https://blog.getreu.net/20250826-muscle-memory-friendly-home-row-mods/)
 
+This ZMK implementation tracks the muscle-memory layout **v1.4.2** (see the
+changelog in the blog post above): the number pad layer keeps home-row mods on
+its left half and offers tap-dance arithmetic operators, and the system keys
+(bootloader, reset) sit on the system layer's left column.
+
 ![Base layer](./docs/images/base.svg)
 
 ![Symbol layer](./docs/images/symbols.svg)
