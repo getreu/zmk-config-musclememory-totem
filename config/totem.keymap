@@ -202,10 +202,10 @@
         system {
             label = "SYST";
             bindings = <
-                &bt BT_CLR    &none         &none         &none         &sys_reset      &sys_reset        &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &none  &none
-                &none         &none         &out OUT_USB  &out OUT_BLE  &none           &kp C_MUTE        &kp C_VOL_DN          &kp C_VOL_UP          &none  &none
-&bt BT_CLR_ALL  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp K_PLAY_PAUSE  &kp K_PREV            &kp C_NEXT            &none  &none  &none
-                                            &trans        &trans        &trans          &trans            &trans                &trans
+        &bootloader   &none         &none         &none         &bt BT_CLR_ALL  &sys_reset        &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &none  &none
+        &sys_reset    &none         &out OUT_USB  &out OUT_BLE  &bt BT_CLR      &kp C_MUTE        &kp C_VOL_DN          &kp C_VOL_UP          &none  &none
+  &none &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp K_PLAY_PAUSE  &kp K_PREV            &kp C_NEXT            &none  &none  &none
+                                             &trans        &trans        &trans          &trans            &trans                &trans
             >;
         };
 
