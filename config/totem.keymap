@@ -45,7 +45,7 @@
         combo_symbol {
             timeout-ms = <100>;
             key-positions = <33 36>; // Combo `thumb ESC + thumb Backspace`
-            bindings = <&tog SYMB>;
+            bindings = <&to SYMB>;
         };
 
         combo_boot_left {
@@ -130,7 +130,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "Compose1ToNumpad";
             #binding-cells = <0>;
-            bindings = <&kp K_APP>, <&tog 2>;
+            bindings = <&kp K_APP>, <&to 2>;
 
             tapping-term-ms = <230>;
         };
