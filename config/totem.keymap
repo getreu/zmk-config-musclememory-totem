@@ -109,7 +109,12 @@
             quick-tap-ms = <175>;
             bindings = <&mo>, <&kp>;
 
-            hold-trigger-key-positions = <KEYS_R>;
+            // KEYS_R plus 13 (F): same-hand exception so hold [D] (symbol
+            // layer) + tap [F] (-> TAB on that layer) resolves instantly
+            // instead of waiting out tapping-term-ms. Mirrors hmr2's J
+            // exception below. Matches qmk-vial-src-musclememory-cheapino2
+            // v1.5.0 chordal_hold.c's D/F exception.
+            hold-trigger-key-positions = <KEYS_R 13>;
             hold-trigger-on-release;
         };
 
@@ -122,7 +127,12 @@
             quick-tap-ms = <175>;
             bindings = <&mo>, <&kp>;
 
-            hold-trigger-key-positions = <KEYS_L>;
+            // KEYS_L plus 16 (J): same-hand exception so hold [K] (symbol
+            // layer) + tap [J] (-> DOWN on that layer) resolves instantly.
+            // Mirror of hml2's F exception above, matching
+            // qmk-vial-src-musclememory-cheapino2 v1.5.0 chordal_hold.c's
+            // K/J exception.
+            hold-trigger-key-positions = <KEYS_L 16>;
             hold-trigger-on-release;
         };
 
