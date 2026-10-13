@@ -48,6 +48,12 @@
             bindings = <&to SYMB>;
         };
 
+        combo_npad {
+            timeout-ms = <100>;
+            key-positions = <28 29>; // Combo `,+.`
+            bindings = <&to NPAD>;
+        };
+
         combo_boot_left {
             timeout-ms = <100>;
             key-positions = <0 1 2 4>; // Combo `Q+W+E+T`
