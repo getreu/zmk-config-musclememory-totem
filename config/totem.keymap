@@ -225,7 +225,7 @@
         navigation {
             label = "NAVI";
             bindings = <
-        &none       &none    &none    &none    &none            &kp HOME  &kp DEL        &kp INS    &kp END    &kp BACKSPACE
+        &none       &none    &none    &none    &none            &kp HOME  &kp INS        &kp DEL    &kp END    &kp BACKSPACE
         &kp ESCAPE  &kp INS  &kp DEL  &kp TAB  &kp BACKSPACE    &kp LEFT  &kp DOWN       &kp UP     &kp RIGHT  &kp ENTER
 &trans  &none       &none    &none    &none    &none            &none     &kp PAGE_DOWN  &kp PG_UP  &none      &none          &trans
                              &trans   &trans   &trans           &trans    &trans         &trans
