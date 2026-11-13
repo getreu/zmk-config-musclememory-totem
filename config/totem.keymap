@@ -30,22 +30,10 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_caps1 {
-            timeout-ms = <100>;
-            key-positions = <32 37>; // Combo `fn + compose`
-            bindings = <&kp CAPSLOCK>;
-        };
-
         combo_caps2 {
             timeout-ms = <100>;
             key-positions = <20 31>; // Combo `right-shift+left-shift`
             bindings = <&kp CAPSLOCK>;
-        };
-
-        combo_symbol {
-            timeout-ms = <100>;
-            key-positions = <33 36>; // Combo `thumb ESC + thumb Backspace`
-            bindings = <&to SYMB>;
         };
 
         combo_npad {
@@ -66,16 +54,25 @@
             bindings = <&bootloader>;
         };
 
-        combo_sys_left {
+        combo_caps_v_esc {
+            // Port of qmk-vial-src-musclememory-cheapino2 v1.6.0: V+Esc ->
+            // Caps Lock. Replaces combo_caps1 (fn+compose) and
+            // combo_sys_left (v+space), both now redundant since SYST is
+            // reached via the FUNC layer's own thumb keys instead (see
+            // func layer below).
             timeout-ms = <100>;
-            key-positions = <24 34>; // Combo `v+space`
-            bindings = <&mo SYST>;
+            key-positions = <24 33>; // Combo `v + thumb ESC`
+            bindings = <&kp CAPSLOCK>;
         };
 
-        combo_sys_right {
+        combo_symbol_m_bspc {
+            // Port of qmk-vial-src-musclememory-cheapino2 v1.6.0: M+Backspace
+            // -> symbol layer. Replaces combo_symbol (esc+backspace) and
+            // combo_sys_right (m+space), both now redundant for the same
+            // reason as above.
             timeout-ms = <100>;
-            key-positions = <27 35>; // Combo `m+space`
-            bindings = <&mo SYST>;
+            key-positions = <27 36>; // Combo `m + thumb Backspace`
+            bindings = <&to SYMB>;
         };
     };
 
@@ -218,7 +215,7 @@
         &kp F1           &kp F2              &kp F3   &kp F4          &kp F5               &kp F6             &kp F7          &kp F8   &kp F9              &kp F10
         &hml LSHIFT F11  &hml RIGHT_ALT F12  &kp F13  &hml LCTRL F14  &hml LEFT_ALT F15    &hmr LEFT_ALT F16  &hmr RCTRL F17  &kp F18  &hmr RIGHT_ALT F19  &hmr RSHIFT F20
 &trans  &kp F21          &kp F22             &kp F23  &hml RGUI F24   &none                &none              &kp RGUI        &none    &none               &mo SYST         &trans
-                                             &trans   &trans          &trans               &trans             &trans          &trans
+                                             &trans   &mo SYST        &trans               &trans             &mo SYST        &trans
             >;
         };
 
